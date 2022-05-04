@@ -1,1 +1,34 @@
 /* add home page styles here */
+.row {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    width: 100vw;
+    
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    
+}
+.left {
+    display: flex;
+    left: 0px;
+}
+
+.right {
+    display: flex;
+    right: 100%;
+    position: absolute;
+    right: 0px;
+}
+
+h2 {
+    position: absolute;
+    top: 0px;
+}
+
+.goblin-generator {
+    padding: 1em;
+}

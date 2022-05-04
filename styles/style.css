@@ -36,7 +36,9 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
     margin-bottom: calc(var(--footer-height));
+    position: relative;
 }
 
 section {
