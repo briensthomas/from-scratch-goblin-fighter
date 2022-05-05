@@ -25,7 +25,6 @@ goblinForm.addEventListener('submit', (e) => {
         hp: Math.ceil(Math.random() * 5),
     };
     goblinsArray.push(goblins);
-    console.log('logging goblins', goblinsArray);
     displayGoblinsList();
     goblinForm.reset();
 });
@@ -46,13 +45,11 @@ const displayGoblinsList = () => {
 displayGoblinsList();
 
 function goblinClickHandler(goblin) {
-    console.log(`I am clicking on ${goblin.name}`);
-
     if (goblin.hp === 0) return;
     if (playerHP === 0) return;
 
     const playerHit = Math.random();
-    if (playerHit < 1) {
+    if (playerHit > 0.5) {
         goblin.hp--;
         displayGoblinsList();
         alert(`You hit ${goblin.name} for 1 damage!`);
@@ -66,7 +63,7 @@ function goblinClickHandler(goblin) {
     }
     const goblinHit = Math.random();
     if (goblin.hp === 0) return;
-    if (goblinHit < 1) {
+    if (goblinHit > 0.5) {
         playerHP--;
         playerHPEl.textContent = playerHP;
         alert(`${goblin.name} hit you for 1 damage!`);
