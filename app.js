@@ -2,7 +2,7 @@
 import { renderGoblinsList, } from './utils.js';
 
 const goblinForm = document.getElementById('goblin-form');
-const goblinsListEl = document.querySelector('.goblins-list');
+const goblinsListEl = document.getElementById('goblins-list');
 const goblinsDefeatedEl = document.querySelector('.defeated-span');
 
 const adventurer = document.getElementById('adventurer');
@@ -12,8 +12,16 @@ let playerHP = 10;
 let goblinsDefeatedCount = 0;
 
 let goblinsArray = [
-    { name: 'Bob', hp: 5, },
-    { name: 'Scorio the Defiler, the Abhorred, Unmaker of Joy', hp: 1, },
+    {
+        name: 'Scorio',
+        hp: 1,
+        img: './assets/goblin.png',
+    },
+    {
+        name: 'Boblin',
+        hp: 5,
+        img: './assets/goblin.png',
+    }
 ];
 // set event listeners 
 goblinForm.addEventListener('submit', (e) => {
@@ -23,6 +31,7 @@ goblinForm.addEventListener('submit', (e) => {
     let goblins = {
         name: goblinData.get('goblin-name') || `Goblin #${Math.floor(Math.random() * 1000)}`,
         hp: Math.ceil(Math.random() * 5),
+        img: './assets/goblin.png'
     };
     goblinsArray.push(goblins);
     displayGoblinsList();

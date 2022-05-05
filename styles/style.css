@@ -39,6 +39,7 @@ main {
     width: 100%;
     margin-bottom: calc(var(--footer-height));
     position: relative;
+    box-sizing: border-box;
 }
 
 section {

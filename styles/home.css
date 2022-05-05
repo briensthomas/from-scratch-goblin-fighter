@@ -13,22 +13,20 @@
 }
 .left {
     display: flex;
-    left: 0px;
+
 }
 
 .right {
     right: 0px;
     display: flex;
-    align-items: flex-end;
+    align-content: end;
+    justify-content: center;
 }
 
-h2 {
-    position: absolute;
-    top: 0px;
-}
-
-.goblins-list {
-    padding: 1em;
+#goblins-list {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
 }
 
 .goblin-generator {
@@ -45,5 +43,27 @@ h2 {
 }
 
 .goblin {
-    
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 50%;
+    align-items: center;
+    width: 200px;
+    margin: 25px;
+    vertical-align:;
+}
+
+.goblin img {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.goblin h2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.goblin p {
+    margin: 0%;
+    font-weight: bold;
 }
