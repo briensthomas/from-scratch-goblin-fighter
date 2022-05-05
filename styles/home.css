@@ -35,6 +35,10 @@ h2 {
     padding: 1em;
 }
 
+.game-over {
+    transform: rotate(90deg);
+}
+
 .adventurer {
     width: 150px;
     padding: 1em;

@@ -5,6 +5,7 @@ const goblinForm = document.getElementById('goblin-form');
 const goblinsListEl = document.querySelector('.goblins-list');
 const goblinsDefeatedEl = document.querySelector('.defeated-span');
 
+const adventurer = document.getElementById('adventurer');
 const playerHPEl = document.getElementById('player-health');
 // let state
 let playerHP = 10;
@@ -72,7 +73,7 @@ function goblinClickHandler(goblin) {
         
         if (playerHP === 0) {
             alert('Game Over :(');
-
+            adventurer.classList.add('game-over');
         }
     } else {
         alert(`${goblin.name} tried to hit you, and missed!`);
