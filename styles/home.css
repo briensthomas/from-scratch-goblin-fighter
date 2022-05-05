@@ -4,7 +4,6 @@
     flex-direction: row;
     border: 2px solid black;
     width: 100vw;
-    
 }
 
 .column {
@@ -18,10 +17,9 @@
 }
 
 .right {
-    display: flex;
-    right: 100%;
-    position: absolute;
     right: 0px;
+    display: flex;
+    align-items: flex-end;
 }
 
 h2 {
@@ -29,6 +27,19 @@ h2 {
     top: 0px;
 }
 
+.goblins-list {
+    padding: 1em;
+}
+
 .goblin-generator {
     padding: 1em;
+}
+
+.adventurer {
+    width: 150px;
+    padding: 1em;
+}
+
+.goblin {
+    
 }
