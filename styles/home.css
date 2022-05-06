@@ -1,1 +1,117 @@
 /* add home page styles here */
+body {
+    background-image: url(../assets/windmill.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#goblins-defeated {
+    display: flex;
+    flex-direction: row;
+}
+
+.goblin-input {
+    margin: 25px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+
+}
+.left {
+    display: flex;
+    justify-content: center;
+}
+
+.right {
+    right: 0px;
+    display: flex;
+    align-content: end;
+    justify-content: center;
+}
+
+.title {
+    position: absolute;
+    top: 0%;
+}
+
+#goblins-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.goblin-generator {
+    padding: 1em;
+}
+
+
+#adventurer {
+    width: 150px;
+    padding: 1em;
+    display: flex;
+}
+
+.adventurer {
+    margin: 0%;
+    align-content: center;
+    justify-content: end;
+}
+
+.player-hp {
+    background-color: brown;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.goblin {
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+    align-items: center;
+    width: 200px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.goblin img {
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.goblin h2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0%;
+}
+
+.goblin h3 {
+    margin: 0%;
+}
+
+.goblin p {
+    margin: 0%;
+    font-weight: bold;
+}
+
+.game-over {
+    transform: rotate(90deg);
+}
