@@ -7,6 +7,7 @@ body {
     position: relative;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
 #goblins-defeated {
@@ -42,6 +43,11 @@ body {
     display: flex;
     align-content: end;
     justify-content: center;
+}
+
+.title {
+    position: absolute;
+    top: 0%;
 }
 
 #goblins-list {
